@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>MASTERCLEANER - Nettoyage Pro</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js">
+
+</script>
+
+<body>
+
+<div class="overlay">
+
+<header>
+<div class="logo"><img src="image/master cleaner.png" width="170px" height="130"></div>
+<nav>
+<a href="#services">Services</a>
+<a href="#avis">Avis</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>MASTER<span style="color: white;">CLEANER</span></h1>
+<p>Votre entreprise de nettoyage professionnel et particulier </p>
+</div>
+
+<section id="services">
+<h2>Nos Services & Tarifs</h2>
+<div class="grid">
+<div class="card">
+    <img src="image/aparte.jpeg" alt="" width="300px" height="200px">
+<h3>Nettoyage d'appartement</h3>
+<hr><br>
+<p class="prix">1 chambre salon à 25870 FCFA</p>
+<p class="prix">2 chambre salon à 44980 FCFA</p>
+<p class="prix">3 chambre salon à 60980 FCFA</p>
+</div>
+<div class="card">
+    <img src="image/bureau.avif" alt="" width="300px" height="200px">
+<h3>Nettoyage Bureau</h3>
+<hr><br>
+<p class="prix">le metre carré est à 850 FCFA</p>
+</div>
+<div class="card">
+    <img src="image/canape.webp" alt="" width="300px" height="200px">
+<h3>Nettoyage Canapé</h3>
+<hr><br>
+<p class="prix">Une place à 5000 FCFA</p>
+</div>
+<div class="card">
+    <img src="image/fin de chiantier.jpeg" alt="" width="300px" height="200px">
+<h3>Fin de Chantier</h3>
+<hr><br>
+<p class="prix">Sur devis </p>
+</div>
+</div>
+</section>
+ 
+
+<section id="services">
+<div class="grid">
+<div class="card">
+    <img src="image/aparte.jpeg" alt="" width="300px" height="200px">
+<h3>Entretien d'appartement</h3>
+<hr><br>
+<p class="prix">1 chambre salon </p>
+<p class="prix">2 chambre salon</p>
+<p class="prix">3 chambre salon</p>
+Fréquence de passage 2 à 30 fois par mois 
+<p class="prix">Sur devis</p>
+</div>
+<div class="card">
+    <img src="image/entretien bureau.jpg" alt="" width="300px" height="200px">
+<h3>Entretien d'entreprise et Bureau</h3>
+<hr><br>
+Fréquence de passage 2 à 30 fois par mois 
+<p class="prix">Sur devis</p>
+</div>
+<div class="card">
+    <img src="image/voiture.avif" alt="" width="300px" height="200px">
+<h3>Nettoyage interieur voiture</h3>
+<hr><br>
+<p class="prix">Une place à 6000 FCFA</p>
+</div>
+<div class="card">
+    <img src="image/vitre.jpg" alt="" width="300px" height="200px">
+<h3>nettoyage de vitres</h3>
+<hr><br>
+<p class="prix">le metre carré est à 550 FCFA </p>
+</div>
+</div>
+</section>
+<br><hr><br><br>
+
+<section id="galerie">
+  <h2>Nos réalisations</h2>
+  <p>Découvrez quelques travaux de nettoyage déjà réalisés par notre équipe.</p>
+
+  <div class="gallery">
+
+    <!-- IMAGE -->
+    <div class="item">
+      <img src="image/cuir.jpeg" alt="Nettoyage canapé">
+    </div>
+
+    <!-- IMAGE -->
+    <div class="item">
+      <img src="image/agent.jpeg" alt="Nettoyage tapis">
+    </div>
+
+    <!-- VIDEO -->
+    <div class="item">
+      <video controls>
+        <source src="video/chantier.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="item">
+      <video controls>
+        <source src="video/aparte.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+  </div>
+  <div class="gallery">
+    
+     <div class="item">
+      <video controls>
+        <source src="video/lux.mp4" type="video/mp4">
+      </video>
+    </div>
+   <div class="item">
+      <video controls>
+        <source src="video/tissu.mp4" type="video/mp4">
+      </video>
+    </div>
+     <div class="item">
+      <video controls>
+        <source src="video/mecap.mp4" type="video/mp4">
+      </video>
+    </div>
+ <div class="item">
+      <video controls>
+        <source src="video/ibro.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </div>
+</section>
+
+<section id="avis">
+
+<h2>Avis Clients</h2>
+<div class="grid">
+<div class="card">⭐⭐⭐⭐⭐<p>Service impeccable.</p><strong>- Mrs Rama ngom </strong></div>
+<div class="card">⭐⭐⭐⭐<p>Rapide et efficace.</p><strong>-mrs Michelle </strong></div>
+</div>
+</section>
+<section id="commentaires">
+<h2>Commentaires des clients</h2>
+
+<form onsubmit="addComment(event)">
+    <input type="text" id="commentNom" placeholder="Votre nom" required>
+    <textarea id="commentTexte" placeholder="Votre commentaire" required></textarea>
+    <button type="submit">Envoyer</button>
+</form>
+
+<div id="commentList" class="grid"></div>
+</section>
+<br><hr><br><br>
+<section id="contact">
+<h2>Contactez-nous</h2>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+
+<!-- FORMULAIRE -->
+<form onsubmit="sendWhatsApp(event)">
+    <input type="text" id="nom" placeholder="Votre nom" required>
+    <input type="email" id="email" placeholder="Votre email" required>
+    <textarea id="message" placeholder="Votre message" required></textarea>
+
+    <p id="locationStatus">📍 Localisation non détectée</p>
+
+    <button type="submit">Envoyer sur WhatsApp</button>
+</form>
+
+<!-- GOOGLE MAPS -->
+<div style="border-radius:10px; overflow:hidden;">
+<iframe 
+    src="https://www.google.com/maps?q=Saint-Louis%20S%C3%A9n%C3%A9gal&output=embed"
+    width="100%" 
+    height="300" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 MASTERCLEANER - Tous droits réservés
+</footer>
+
+</div>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/221782186007" target="_blank">
+WhatsApp
+</a>
+
+<script>
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+sections.forEach(sec => {
+const pos = sec.getBoundingClientRect().top;
+if(pos < window.innerHeight - 100){
+sec.classList.add("show");
+}
+});
+});
+</script>
+
+
+
+</body>
+</html>
