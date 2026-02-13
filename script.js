@@ -7,9 +7,9 @@ function sendWhatsApp(e){
 
     let numero = "221782186007"; // mets ton numéro WhatsApp ici
 
-    let texte = `Bonjour MASTERCLEANER 👋%0A
-Nom: ${nom}%0A
-Email: ${email}%0A
+    let texte = `Bonjour MASTERCLEANER 👋
+Nom: ${nom}
+Email: ${email}
 Message: ${message}`;
 
     let url = `https://wa.me/${numero}?text=${texte}`;
@@ -43,10 +43,10 @@ function sendWhatsApp(e){
 
     let numero = "221782186007"; // ⚠️ TON numéro WhatsApp ici
 
-    let texte = `Bonjour MASTERCLEANER 👋%0A
-Nom: ${nom}%0A
-Email: ${email}%0A
-Message: ${message}%0A
+    let texte = `Bonjour MASTERCLEANER 👋
+Nom: ${nom}
+Email: ${email}
+Message: ${message}
 Localisation du client: ${clientLocation}`;
 
     let url = `https://wa.me/${numero}?text=${encodeURIComponent(texte)}`;

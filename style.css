@@ -134,11 +134,12 @@ h2 {
 .card {
     background: white;
     color: #0a1f44;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: transform 0.3s;
 }
+
 
 .card:hover {
     transform: scale(1.05);
